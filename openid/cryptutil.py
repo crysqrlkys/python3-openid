@@ -77,7 +77,7 @@ SHA256_AVAILABLE = True
 
 try:
     from Crypto.Util.number import long_to_bytes, bytes_to_long
-except ImportError:
+except Exception:
     # In the case where we don't have pycrypto installed, define substitute
     # functionality.
 
